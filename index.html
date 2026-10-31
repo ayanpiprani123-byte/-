@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f6">
+<title>For Dhruvi 💗</title>
+<style>
+:root{--pink:#f46f9b;--deep:#b83269;--ink:#67374d}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:24px 14px 40px;display:grid;place-items:center;
+font-family:"Trebuchet MS",system-ui,sans-serif;color:var(--ink);
+background:linear-gradient(145deg,#fff8fb,#ffe4ef 55%,#fff7fa);overflow-x:hidden}
+.bg-heart{position:fixed;z-index:0;pointer-events:none;color:#ef9bb7;opacity:.35;animation:float 7s ease-in-out infinite}
+.bg-heart:nth-child(1){top:8%;left:7%;font-size:30px}.bg-heart:nth-child(2){top:18%;right:8%;font-size:22px;animation-delay:1s}.bg-heart:nth-child(3){bottom:8%;left:10%;font-size:38px;animation-delay:2s}
+@keyframes float{50%{transform:translateY(-15px) rotate(12deg)}}
+#petal-layer{position:fixed;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-35px;opacity:0;animation:petalFall linear forwards;will-change:transform,opacity}
+@keyframes petalFall{0%{transform:translate3d(0,-30px,0) rotate(0deg);opacity:0}10%{opacity:.72}85%{opacity:.55}100%{transform:translate3d(var(--drift),110vh,0) rotate(var(--spin));opacity:0}}
+.card{position:relative;z-index:1;width:min(100%,650px);padding:clamp(20px,5vw,40px);border:1px solid #fff;border-radius:28px;background:#ffffffed;box-shadow:0 18px 55px #b8326920;text-align:center}
+.tag{display:inline-block;padding:8px 15px;border-radius:30px;background:#fff0f5;color:var(--deep);font-size:13px}
+.hero{font-size:60px;margin:13px 0 4px}
+h1{font:700 clamp(32px,8vw,46px)/1.12 Georgia,serif;color:var(--deep);margin:9px 0 12px}
+.intro{font-size:15px;line-height:1.7;margin:0 auto 18px}
+.letter-photo{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;
+  margin:18px auto 14px;border-radius:16px;border:1px solid #ffe2ec;box-shadow:0 8px 24px #b8326918}
+.letter{white-space:pre-line;text-align:left;background:#fff8fb;border:1px solid #ffe2ec;border-radius:18px;padding:18px clamp(14px,4vw,24px);font-size:15px;line-height:1.82;max-height:48vh;overflow:auto}
+.extra{margin-top:14px;padding:15px;border-radius:16px;background:#fff0f5;border:1px dashed #f5a8c2;text-align:left;font-size:15px;line-height:1.8}
+.music{margin:17px auto 5px;padding:13px;border-radius:16px;background:#fff3f7;border:1px solid #ffe0eb}
+.music button{background:white;color:#a33d68;border:1px solid #f4bfd0;padding:10px 16px;font-size:14px}
+#player{display:none;margin:12px auto 0;width:min(100%,340px)}
+#player iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+.question{font:700 clamp(23px,6vw,30px)/1.25 Georgia,serif;color:var(--deep);margin:23px 0 17px}
+.buttons{position:relative;min-height:60px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+button{border:0;border-radius:999px;padding:14px 24px;font-size:16px;font-weight:700;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#yes{background:linear-gradient(135deg,#ff80a9,#e94f87);color:white;box-shadow:0 8px 18px #f7a4c1;position:relative;z-index:2}
+#no{background:#fff0f5;color:#a04d70;position:relative;z-index:3;transition:transform .22s ease,opacity .22s ease}
+#honest{margin-top:12px;padding:8px;background:transparent;color:#a66a82;text-decoration:underline;font-size:13px}
+.small{font-size:12px;color:#b17a91;margin-top:15px;line-height:1.6}
+.hidden{display:none!important}
+.success .hero{font-size:78px}
+.success p{line-height:1.8}
+@media(max-width:420px){.letter{font-size:14px;max-height:46vh}.card{padding:20px 15px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="bg-heart">♡</div><div class="bg-heart">✧</div><div class="bg-heart">♥</div>
+<div id="petal-layer" aria-hidden="true"></div>
+
+<main class="card" id="letterCard">
+  <span class="tag">A little something from my heart 💌</span>
+  <div class="hero">🧸🌷</div>
+  <h1>Heyyy, Dhruvi! 💗</h1>
+  <p class="intro">I’ve been wanting to tell you something… so here goes. Read this whenever you’re ready. 🥹</p>
+
+  <div class="music">
+    <button type="button" id="musicBtn">▶ Play Haareya 🎶</button>
+    <div id="player"></div>
+    <div class="small">Tap to play the official Haareya video. YouTube may show its own player controls.</div>
+  </div>
+
+
+  <img class="letter-photo" src="dhruvi-photo.jpeg" alt="Photo collage for Dhruvi" loading="eager">
+
+  <div class="letter">Heyyyy🌟,
+
+I don’t know abhi tak express kaise karu, buttt 2-3 months se I’m literally obsessed with youu! 😭🤧
+
+Mujhe nahi pataaa but jab bhiii tujheee dekhtaaa hu, toh I feel meri nazar tujhse hat-ti hi nahi 😭 Bas tujheee observeee karta rahuu. Aur jab eye contact hota hai naaa, I’m literally stun 😭🤧 Meri nazar kahi aur jaati hi nahi me bohot dar raha thaa par jab mene 2 din terse ache se bat ki tab thodi himmat ayi aur merko laga tha dhruv tera bf he isliyee bhi mene confess nai kiyaaa but now i am confessing i likee youu🤧! So muchhh, aur tune bola tha bata deneka to regret na rahe bas isi reason se mene bolaa hee vrna shyd abhi tak confess nai kar pata me, kyuki merko bohott dar lagtaa tha tujhsee i mean pata nai🤧 par dar lagta tha aur me terko chudail bolta hu asli meee tu nai heee you r thee most prettiest girll🤧🤍!
+
+You’re honestly prettiest girl I’ve ever seen 🧿😅✨
+
+Anddd now I thinkkk… I really like youu. Maybe thoda zyada hi 🤧❤️
+
+I knowww mere confess karne se kuch nai hota but tera jo bhi decision hogaa i will respect it koi forcing nai he if u feel good to haa bolnaa varnaa koi nai 🤧 ye to bas confess krna tha isliye boldiaa…
+
+So yeahhh… this is me finally saying it.aur me pagal nai hun😭🌟</div>
+
+  <div class="extra">Aur ek baattt… kabhi kabhi na bas tujhe dekh ke hi smile aa jaati hai, bina kisi reason keee 😭🤧 Tujhse baat ho jaaye toh poora din thoda aur achha lagne lagta hai. Pata nahi aage kya hoga, but I just wanted you to know ki tu mere liye kitni special ban gayi haiii. And honestly, it took me a lottt of courage to write all this… so please meri spelling mistakes pe mat hasnaaa 😭❤️</div>
+
+
+  <div class="question">So, Dhruvi… would you like to give us a chance? 🥺💞</div>
+  <div class="buttons" id="buttonArea">
+    <button type="button" id="yes">I LIKE YOU TOO 💖</button>
+    <button type="button" id="no">Umm… 🙈</button>
+  </div>
+  <button type="button" id="honest">If you don't feel the same, you can tell me honestly 🤍</button>
+  <div class="small">No pressure, just honest feelings. Whatever you choose, I’ll respect it. 🤍</div>
+</main>
+
+<main class="card success hidden" id="success">
+  <div class="hero">🥹💗</div><span class="tag">A moment to remember ✨</span>
+  <h1>WAIT… REALLY?! 😭💞</h1>
+  <p>You've made me the happiest person right now. I’m smiling like an idiot. 🧸🌷</p>
+  <div style="font-size:38px">💐 🫶 💕</div>
+</main>
+
+<main class="card hidden" id="respect">
+  <div class="hero">🤍🌷</div><h1>Thank you for being honest</h1>
+  <p style="line-height:1.8">It's okay, Dhruvi. Thank you for reading my feelings. I meant it when I said I'll respect your decision. No awkwardness, no pressure. 🤍</p>
+</main>
+
+<script>
+(function(){
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const yes = $('yes'), no = $('no'), layer = $('petal-layer');
+  let noClicks = 0, musicOn = false;
+
+  // A soft, light shower when the page first opens; not an overwhelming storm.
+  function sprinkle(){
+    const pieces = ['🌸','💗','♡','🌷'];
+    for(let i=0;i<24;i++){
+      const el=document.createElement('span');
+      el.className='petal';
+      el.textContent=pieces[Math.floor(Math.random()*pieces.length)];
+      el.style.left=(Math.random()*100)+'vw';
+      el.style.fontSize=(11+Math.random()*11)+'px';
+      el.style.animationDuration=(5+Math.random()*5)+'s';
+      el.style.animationDelay=(Math.random()*3)+'s';
+      el.style.setProperty('--drift',((Math.random()-.5)*130)+'px');
+      el.style.setProperty('--spin',((Math.random()-.5)*500)+'deg');
+      layer.appendChild(el);
+      el.addEventListener('animationend',()=>el.remove());
+    }
+  }
+  function show(id){
+    ['letterCard','success','respect'].forEach(x=>$(x).classList.add('hidden'));
+    $(id).classList.remove('hidden');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function celebrate(){
+    show('success');
+    const bits=['💗','💖','💕','🌸','✨','🩷'];
+    for(let i=0;i<36;i++){
+      const el=document.createElement('span');el.className='petal';
+      el.textContent=bits[Math.floor(Math.random()*bits.length)];
+      el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*16)+'px';
+      el.style.animationDuration=(3+Math.random()*2)+'s';el.style.animationDelay=(Math.random()*.8)+'s';
+      el.style.setProperty('--drift',((Math.random()-.5)*160)+'px');
+      el.style.setProperty('--spin','500deg');layer.appendChild(el);
+      el.addEventListener('animationend',()=>el.remove());
+    }
+  }
+
+  // Use both click and keyboard activation through native buttons.
+  yes.addEventListener('click',celebrate);
+  no.addEventListener('click',function(){
+    noClicks++;
+    if(noClicks===1){
+      no.style.transform='translate(58px,-17px)';
+      no.textContent='Waittt 😭';
+    }else if(noClicks===2){
+      no.style.transform='translate(-58px,17px)';
+      no.textContent='Hehe catch me 🙈';
+    }else{
+      no.style.position='absolute';
+      no.style.left='50%';no.style.top='50%';
+      no.style.transform='translate(-50%,-50%) scale(.05)';
+      no.style.opacity='0';no.style.pointerEvents='none';
+      no.setAttribute('aria-hidden','true');
+      no.tabIndex=-1;
+      yes.style.zIndex='4';
+    }
+  });
+  $('honest').addEventListener('click',()=>show('respect'));
+
+  $('musicBtn').addEventListener('click',function(){
+    if(!musicOn){
+      $('player').innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/TyMUY2CDrjc?autoplay=1&playsinline=1&rel=0" title="Haareya - YRF official video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+      $('player').style.display='block';
+      this.textContent='Haareya player 🎶';
+      musicOn=true;
+    }else{
+      $('player').style.display='none';
+      $('player').innerHTML=''; // removing iframe reliably stops playback
+      this.textContent='▶ Play Haareya again 🎶';
+      musicOn=false;
+    }
+  });
+
+  sprinkle();
+})();
+</script>
+</body>
+</html>
